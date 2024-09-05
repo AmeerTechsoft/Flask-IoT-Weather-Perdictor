@@ -70,8 +70,6 @@ This project is a Flask-based web application that interacts with a ThingSpeak I
 
 https://github.com/user-attachments/assets/1f1e4967-1d26-4ed7-91c4-f0ef3ef0e665
 
-
-<video controls src="IoT_temp_and_humidity_prediction.mp4" title="IOT video Temp"></video>
 ---
 
 ## Contributing
