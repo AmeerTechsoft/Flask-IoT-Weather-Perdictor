@@ -22,38 +22,39 @@ This project is a Flask-based web application that interacts with a ThingSpeak I
 
 ## Installation
 
-1. Clone the repository:
-
-   git clone <repository_url>
+1. Clone the repository
+```bash
+   git clone https://github.com/AmeerTechsoft/Flask-IoT-Weather-Perdictor.git
+   ```
 
 2. Navigate to the project directory:
-
+```bash
    cd project_directory
-
+```
 3. Install the required dependencies:
-
+```bash
    pip install -r requirements.txt
-
+```
 4. Set up the SQLite database:
-
+```bash
    sqlite3 predicted_data.db
-
+```
    Run the following SQL command to create the necessary table:
-
+```bash
    CREATE TABLE IF NOT EXISTS predicted_data (
        datetime TEXT,
        temperature REAL,
        humidity REAL
    );
-
+```
 5. Create a `predicted/predictions.csv` file with the necessary data for temperature and humidity predictions.
 
 ## Usage
 
 1. Run the Flask application:
-
+```bash
    python app.py
-
+```
 2. Open your browser and navigate to `http://127.0.0.1:5000/` to view the web interface.
 
 3. Use the `/thingspeak_feed` endpoint to fetch the latest ThingSpeak data and `/chart_data` to visualize the stored predictions.
